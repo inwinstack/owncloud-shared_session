@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<info>
+    <id>shared_session</id>
+    <name>Shared Session</name>
+    <description>My first ownCloud app</description>
+    <licence>AGPL</licence>
+    <author>Dauba</author>
+    <version>0.0.1</version>
+    <namespace>Shared_Session</namespace>
+    <category>other</category>
+	<default_enable/>
+	<types>
+		<session/>
+	</types>
+    <dependencies>
+        <owncloud min-version="8.1" />
+    </dependencies>
+</info>
