@@ -89,8 +89,17 @@ class DatabaseSessionHandler implements \SessionHandlerInterface {
         
         if ($result && $count) {
             $record = $stmt->fetch(\PDO::FETCH_OBJ);
-            
-            return $record ? $record->data : "";
+            $matches = array();
+            preg_match("/\"(.+)\"/", $record->data, $matches);
+
+		    $value = \OC::$server->getCrypto()->decrypt($matches[1], \OC::$server->getSessionCryptoWrapper()->passphrase);
+            //file_put_contents("test.txt", print_r($matches));
+            //file_put_contents("test.txt", $session_id);
+            //file_put_contents("test.txt", $matches[1]);
+            //file_put_contents("test.txt", $value);
+
+            return $record ? $record->data :"";
+            //return $record ? $match[1] :"";
         }
         
         return "";
