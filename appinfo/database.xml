@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<database>
+ <name>*dbname*</name>
+ <create>true</create>
+ <overwrite>false</overwrite>
+ <charset>utf8</charset>
+ <table>
+  <name>sessions</name>
+  <declaration>
+    <field>
+      <name>id</name>
+      <type>text</type>
+      <primary>true</primary>
+      <notnull>true</notnull>
+      <length>32</length>
+    </field>
+    <field>
+      <name>data</name>
+      <type>clob</type>
+      <notnull>true</notnull>
+    </field>
+    <field>
+      <name>ts</name>
+      <type>integer</type>
+      <notnull>true</notnull>
+      <unsigned>true</unsigned>
+      <length>10</length>
+      <default>0</default>
+    </field>
+  </declaration>
+ </table>
+</database>

@@ -2,10 +2,10 @@
 <info>
     <id>shared_session</id>
     <name>Shared Session</name>
-    <description>My first ownCloud app</description>
+    <description>shared session</description>
     <licence>AGPL</licence>
     <author>Dauba</author>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <namespace>Shared_Session</namespace>
     <category>other</category>
 	<default_enable/>
