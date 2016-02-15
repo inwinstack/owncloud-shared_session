@@ -2,7 +2,10 @@
 <info>
     <id>shared_session</id>
     <name>Shared Session</name>
-    <description>shared session</description>
+    <description>
+        Share session between ownCloud servers.
+        User won't be logged out when redirect to another ownCloud servers.
+    </description>
     <licence>AGPL</licence>
     <author>Dauba</author>
     <version>0.0.2</version>
